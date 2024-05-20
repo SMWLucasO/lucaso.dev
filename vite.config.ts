@@ -7,14 +7,9 @@ import viteTsconfigPaths from "vite-tsconfig-paths";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-	base: "/",
-	plugins: [
-		million.vite({ auto: true }),
-		react(),
-		viteTsconfigPaths(),
-		TanStackRouterVite(),
-	],
-	server: {
-		port: 3000,
-	},
+  base: "/",
+  plugins: [million.vite({ auto: true }), react(), viteTsconfigPaths(), TanStackRouterVite()],
+  server: {
+    port: 3000,
+  },
 });
