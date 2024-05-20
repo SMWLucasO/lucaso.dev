@@ -1,4 +1,4 @@
-import path from "path";
+import path from "node:path";
 import { TanStackRouterVite } from "@tanstack/router-vite-plugin";
 import react from "@vitejs/plugin-react-swc";
 import million from "million/compiler";
@@ -11,6 +11,7 @@ export default defineConfig({
 	base: "/",
 	resolve: {
 		alias: {
+			"!": path.resolve(__dirname, "./"),
 			"@": path.resolve(__dirname, "./src"),
 			"@shared": path.resolve(__dirname, "./src/Modules/Shared"),
 			"@components": path.resolve(__dirname, "./src/Modules/Shared/Components"),

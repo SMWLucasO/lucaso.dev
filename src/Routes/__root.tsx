@@ -1,5 +1,5 @@
+import process from "node:process";
 import { Outlet, createRootRoute } from "@tanstack/react-router";
-import process from "process";
 import React, { Suspense } from "react";
 
 const TanStackRouterDevtools =
