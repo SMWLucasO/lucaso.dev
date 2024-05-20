@@ -1,9 +1,8 @@
-import process from "node:process";
 import { Outlet, createRootRoute } from "@tanstack/react-router";
 import React, { Suspense } from "react";
 
 const TanStackRouterDevtools =
-	process.env.NODE_ENV === "production"
+	import.meta.env.NODE_ENV === "production"
 		? () => null // Render nothing in production
 		: React.lazy(() =>
 				// Lazy load in development
@@ -15,12 +14,15 @@ const TanStackRouterDevtools =
 			);
 
 export const Route = createRootRoute({
-	component: () => (
-		<>
-			<Outlet />
-			<Suspense>
-				<TanStackRouterDevtools />
-			</Suspense>
-		</>
-	),
+	component: () => {
+		console.log("here");
+		return (
+			<>
+				<Outlet />
+				<Suspense>
+					<TanStackRouterDevtools />
+				</Suspense>
+			</>
+		);
+	},
 });

@@ -12,7 +12,7 @@ import { createFileRoute } from '@tanstack/react-router'
 
 // Import Routes
 
-import { Route as rootRoute } from './src/Routes/__root'
+import { Route as rootRoute } from './Routes/__root'
 
 // Create Virtual Routes
 
@@ -23,7 +23,7 @@ const IndexLazyImport = createFileRoute('/')()
 const IndexLazyRoute = IndexLazyImport.update({
   path: '/',
   getParentRoute: () => rootRoute,
-} as any).lazy(() => import('./src/Routes/index.lazy').then((d) => d.Route))
+} as any).lazy(() => import('./Routes/index.lazy').then((d) => d.Route))
 
 // Populate the FileRoutesByPath interface
 

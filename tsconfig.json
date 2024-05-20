@@ -5,6 +5,7 @@
 		"lib": ["ES2020", "DOM", "DOM.Iterable"],
 		"module": "ESNext",
 		"skipLibCheck": true,
+		"types": ["vite/client"],
 
 		"moduleResolution": "bundler",
 		"allowImportingTsExtensions": true,
@@ -17,14 +18,11 @@
 		"noUnusedLocals": true,
 		"noUnusedParameters": true,
 		"noFallthroughCasesInSwitch": true,
-
-		"baseUrl": ".",
+		"baseUrl": "./src",
 		"paths": {
-			"!/*": ["./*"],
-			"@/*": ["src/*"],
-			"@shared/*": ["src/Modules/Shared/*"],
-			"@main/*": ["src/Modules/Main/*"],
-			"@components/*": ["src/Modules/Shared/Components/*"]
+			"@shared/*": ["Modules/Shared/*"],
+			"@main/*": ["Modules/Main/*"],
+			"@components/*": ["Modules/Shared/Components/*"]
 		}
 	},
 	"include": ["src"],
