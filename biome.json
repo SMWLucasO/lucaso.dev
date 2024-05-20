@@ -14,5 +14,8 @@
     "lineWidth": 120,
     "lineEnding": "crlf",
     "indentStyle": "space"
+  },
+  "files": {
+    "ignore": ["src/*.gen.ts"]
   }
 }
