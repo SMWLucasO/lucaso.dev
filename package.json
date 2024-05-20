@@ -12,6 +12,8 @@
 		"tsr:watch": "tsr watch"
 	},
 	"dependencies": {
+		"@tanstack/react-query": "^5.37.1",
+		"@tanstack/react-query-devtools": "^5.37.1",
 		"@tanstack/react-router": "^1.33.4",
 		"@tanstack/router-cli": "^1.32.10",
 		"axios": "^1.7.0",
