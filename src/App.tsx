@@ -5,14 +5,14 @@ import { RouterProvider, createRouter } from "@tanstack/react-router";
 import { routeTree } from "./routeTree.gen";
 
 const App = () => {
-	const router = createRouter({ routeTree });
-	const queryClient = new QueryClient();
+  const router = createRouter({ routeTree });
+  const queryClient = new QueryClient();
 
-	return (
-		<QueryClientProvider client={queryClient}>
-			<RouterProvider router={router} />
-		</QueryClientProvider>
-	);
+  return (
+    <QueryClientProvider client={queryClient}>
+      <RouterProvider router={router} />
+    </QueryClientProvider>
+  );
 };
 
 export default App;

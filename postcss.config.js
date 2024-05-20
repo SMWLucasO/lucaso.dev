@@ -1,4 +1,4 @@
 export default {
-	plugins: [],
-	sourceMap: true,
+  plugins: [],
+  sourceMap: true,
 };
