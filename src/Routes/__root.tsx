@@ -1,4 +1,3 @@
-import { HorizontalNavigation } from "@components/Global";
 import { Outlet, createRootRoute } from "@tanstack/react-router";
 import React, { Suspense } from "react";
 
@@ -18,9 +17,6 @@ export const Route = createRootRoute({
   component: () => {
     return (
       <>
-        <div>
-          <HorizontalNavigation />
-        </div>
         <div className="flex flex-wrap">
           <div className="w-1/5" />
           <div className="w-3/5 bg-gray-100">
@@ -28,7 +24,6 @@ export const Route = createRootRoute({
           </div>
           <div className="w-1/5" />
         </div>
-
         <Suspense>
           <TanStackRouterDevtools />
         </Suspense>
