@@ -22,6 +22,7 @@
     "paths": {
       "@shared/*": ["Modules/Shared/*"],
       "@main/*": ["Modules/Main/*"],
+      "@blog/*": ["Modules/Blog/*"],
       "@components/*": ["Modules/Shared/Components/*"]
     }
   },

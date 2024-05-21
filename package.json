@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "tailwind:watch": "npx tailwindcss -i src/index.css -o src/index.css --watch",
     "build": "tsc && vite build",
     "lint": "npx @biomejs/biome format --write .",
     "preview": "vite preview",
